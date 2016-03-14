@@ -1,4 +1,5 @@
 git clone -b chaos_calmer --single-branch https://github.com/bettermanbao/openwrt-jbao.git
+git clone https://github.com/bettermanbao/openwrt-shadowsocks-libev-full.git package/shadowsocks-libev-full
 
 This is the buildsystem for the OpenWrt Linux distribution.
 
