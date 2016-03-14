@@ -112,10 +112,11 @@ config wifi-device  radio$devidx
 	option type     mac80211
 	option channel  ${channel}
 	option hwmode	11${mode_band}
+	option country	CN
 $dev_id
 $ht_capab
 	# REMOVE THIS LINE TO ENABLE WIFI:
-	option disabled 1
+	# option disabled 1
 
 config wifi-iface
 	option device   radio$devidx
