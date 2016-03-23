@@ -81,6 +81,10 @@
 
 	gpio-leds {
 		compatible = "gpio-leds";
+		lan {
+			label = "5k:blue:lan";
+			gpios = <&gpio2 1 1>;
+		};
 		wan {
 			label = "5k:blue:wan";
 			gpios = <&gpio2 0 1>;
