@@ -85,10 +85,6 @@
 			label = "5k:blue:wan";
 			gpios = <&gpio2 0 1>;
 		};
-		lan {
-			label = "5k:blue:lan";
-			gpios = <&gpio2 1 1>;
-		};
 		wifi {
 			label = "5k:green:wifi";
 			gpios = <&gpio3 0 1>;
