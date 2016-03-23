@@ -32,6 +32,11 @@ case $board in
 		ucidef_set_led_netdev "wan" "wan" "aigale:blue:wan" "eth0.2"
 		set_wifi_led "aigale:blue:wlan"
 		;;
+	5k-wifi)
+		ucidef_set_led_netdev "lan" "lan" "5k:blue:lan" eth0.1
+		ucidef_set_led_netdev "wan" "wan" "5k:blue:wan" eth0.2
+		set_wifi_led "5k:green:wifi"
+		;;
 	a5-v11)
 		ucidef_set_led_default "power" "POWER" "a5-v11:red:power" "1"
 		;;
@@ -179,7 +184,7 @@ case $board in
 		set_wifi_led "7links:orange:wifi"
 		set_usb_led "7links:blue:storage"
 		;;
-    pbr-m1)
+	pbr-m1)
         ucidef_set_led_netdev "internet" "internet" "pbr-m1:green:internet" "eth0.2"
         ucidef_set_led_default "power" "power" "pbr-m1:green:power" "1"
         ucidef_set_led_default "sys" "sys" "pbr-m1:green:sys" "1"
