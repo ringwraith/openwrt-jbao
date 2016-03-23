@@ -3,8 +3,8 @@
 /include/ "mt7620n.dtsi"
 
 / {
-	compatible = "5k,5k-wifi", "ralink,mt7620n-soc";
-	model = "5K WIFI";
+	compatible = "5k,5k-w20", "ralink,mt7620n-soc";
+	model = "5K W20";
 
 	palmbus@10000000 {
 		gpio2: gpio@660 {
