@@ -91,7 +91,7 @@
 		};
 		wifi {
 			label = "5k:green:wifi";
-			gpios = <&gpio0 42 1>;
+			gpios = <&gpio0 72 1>;
 		};
 	};
 
