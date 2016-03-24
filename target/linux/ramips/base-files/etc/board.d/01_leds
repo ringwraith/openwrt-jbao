@@ -33,7 +33,6 @@ case $board in
 		set_wifi_led "aigale:blue:wlan"
 		;;
 	5k-w20)
-		ucidef_set_led_netdev "wan" "wan" "5k:blue:wan" "eth0.2"
 		set_wifi_led "5k:green:wifi"
 		;;
 	a5-v11)
