@@ -2,6 +2,9 @@ git clone -b chaos_calmer --single-branch https://github.com/bettermanbao/openwr
 git clone https://github.com/bettermanbao/openwrt-shadowsocks-libev-full.git package/shadowsocks-libev-full
 git clone https://github.com/bettermanbao/openwrt-shadowsocksR-libev-full.git package/shadowsocksr-libev-full
 
+make target/linux/clean
+make package/base-files/clean
+
 This is the buildsystem for the OpenWrt Linux distribution.
 
 Please use "make menuconfig" to configure your appreciated
