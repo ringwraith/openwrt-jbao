@@ -15,9 +15,6 @@ get_status_led() {
 	ai-br100)
 		status_led="aigale:blue:wlan"
 		;;
-	5k-w20)
-		status_led="5k:green:wifi"
-		;;
 	ar670w)
 		status_led="ar670w:green:power"
 		;;
