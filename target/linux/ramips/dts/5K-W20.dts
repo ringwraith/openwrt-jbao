@@ -7,6 +7,10 @@
 	model = "5K W20";
 
 	palmbus@10000000 {
+		gpio3: gpio@688 {
+			status = "okay";
+		};
+
 		spi@b00 {
 			status = "okay";
 			m25p80@0 {
@@ -74,7 +78,7 @@
 		compatible = "gpio-leds";
 		wifi {
 			label = "5k:green:wifi";
-			gpios = <&gpio0 72 1>;
+			gpios = <&gpio3 0 1>;
 		};
 	};
  
