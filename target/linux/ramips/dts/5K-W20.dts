@@ -9,7 +9,6 @@
 	palmbus@10000000 {
 		spi@b00 {
 			status = "okay";
-
 			m25p80@0 {
 				#address-cells = <1>;
 				#size-cells = <1>;
@@ -68,26 +67,6 @@
 				ralink,group = "i2c", "uartf";
 				ralink,function = "gpio";
 			};
-		};
-	};
-
-	gpio-leds {
-		compatible = "gpio-leds";
-		wan {
-			label = "5k:blue:wan";
-			gpios = <&gpio2 0 1>;
-		};
-		lan1 {
-			label = "5k:blue:lan1";
-			gpios = <&gpio2 1 1>;
-		};
-		lan2 {
-			label = "5k:blue:lan2";
-			gpios = <&gpio2 2 1>;
-		};
-		wifi {
-			label = "5k:green:wifi";
-			gpios = <&gpio3 0 1>;
 		};
 	};
 
